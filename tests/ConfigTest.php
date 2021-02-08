@@ -33,7 +33,7 @@ final class ConfigTest extends TestCase
     /**
      * @test
      */
-    public function identityVerificationSecret(): void
+    public function getter(): void
     {
         $workspaceId = 'nwrk724c';
         $identityVerificationSecret = u(self::faker()->sha256)->truncate(40)->toString();
@@ -44,7 +44,12 @@ final class ConfigTest extends TestCase
         );
 
         self::assertSame(
-            $config->identityVerificationSecret(),
+            $workspaceId,
+            $config->workspaceId()->toString()
+        );
+
+        self::assertSame(
+            $identityVerificationSecret,
             $config->identityVerificationSecret()->toString()
         );
     }
