@@ -16,6 +16,7 @@ namespace Datana\Intercom\Config\Tests;
 use Datana\Intercom\Config\Config;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework\TestCase;
+use function Symfony\Component\String\u;
 
 final class ConfigTest extends TestCase
 {
@@ -34,8 +35,8 @@ final class ConfigTest extends TestCase
      */
     public function identityVerificationSecret(): void
     {
-        $identityVerificationSecret = self::faker()->uuid;
         $workspaceId = 'nwrk724c';
+        $identityVerificationSecret = u(self::faker()->sha256)->truncate(40)->toString();
 
         $config = new Config(
             $workspaceId,
