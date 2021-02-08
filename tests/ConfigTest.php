@@ -45,7 +45,7 @@ final class ConfigTest extends TestCase
 
         self::assertSame(
             $workspaceId,
-            $config->workspaceId()->toString()
+            $config->appId()->toString()
         );
 
         self::assertSame(

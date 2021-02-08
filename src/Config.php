@@ -17,20 +17,20 @@ use Datana\Intercom\Value;
 
 final class Config
 {
-    private Value\Common\WorkspaceId $workspaceId;
+    private Value\Workspace\AppId $appId;
     private Value\Security\IdentityVerificationSecret $identityVerificationSecret;
 
     public function __construct(
-        string $workspaceId,
+        string $appId,
         string $intercomIdentityVerificationSecret
     ) {
-        $this->workspaceId = Value\Common\WorkspaceId::fromString($workspaceId);
+        $this->appId = Value\Workspace\AppId::fromString($appId);
         $this->identityVerificationSecret = Value\Security\IdentityVerificationSecret::fromString($intercomIdentityVerificationSecret);
     }
 
-    public function workspaceId(): Value\Common\WorkspaceId
+    public function appId(): Value\Workspace\AppId
     {
-        return $this->workspaceId;
+        return $this->appId;
     }
 
     public function identityVerificationSecret(): Value\Security\IdentityVerificationSecret

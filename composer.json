@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "datana-gmbh/intercom-value-objects": "^1.1.0",
+        "datana-gmbh/intercom-value-objects": "^1.2.0",
         "thecodingmachine/safe": "^1.3",
         "webmozart/assert": "^1.9"
     },
