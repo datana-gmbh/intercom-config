@@ -22,7 +22,7 @@ final class Config
 
     public function __construct(
         string $appId,
-        string $intercomIdentityVerificationSecret
+        string $intercomIdentityVerificationSecret,
     ) {
         $this->appId = Value\Workspace\AppId::fromString($appId);
         $this->identityVerificationSecret = Value\Security\IdentityVerificationSecret::fromString($intercomIdentityVerificationSecret);
