@@ -45,12 +45,12 @@ final class ConfigTest extends TestCase
 
         self::assertSame(
             $workspaceId,
-            $config->appId()->toString()
+            $config->appId()->toString(),
         );
 
         self::assertSame(
             $identityVerificationSecret,
-            $config->identityVerificationSecret()->toString()
+            $config->identityVerificationSecret()->toString(),
         );
     }
 }
