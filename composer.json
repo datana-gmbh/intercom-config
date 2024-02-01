@@ -11,14 +11,14 @@
     ],
     "require": {
         "php": ">=8.0",
-        "datana-gmbh/intercom-value-objects": "^1.2.0",
+        "datana-gmbh/intercom-value-objects": "^1.21.0",
         "thecodingmachine/safe": "^2.0",
         "webmozart/assert": "^1.9"
     },
     "require-dev": {
         "ergebnis/test-util": "^1.4",
         "phpunit/phpunit": "^9.0",
-        "symfony/string": "^5.2 || ^6.0"
+        "symfony/string": "^5.2 || ^6.0 || ^7.0"
     },
     "config": {
         "sort-packages": true
