@@ -18,7 +18,7 @@
     "require-dev": {
         "ergebnis/test-util": "^1.4",
         "phpunit/phpunit": "^9.0",
-        "symfony/string": "^5.2 || ^6.0 || ^7.0"
+        "symfony/string": "^5.2||^6.0||^7.0"
     },
     "config": {
         "sort-packages": true
